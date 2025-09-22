@@ -1,21 +1,21 @@
 //complete this code
 class Person {
-	name: string;
-	age: number;
+	// name: string;
+	// age: number;
 	constructor(name: string, age: number){
 		this.name =  name;
 		this.age=age;
 	}
-	getName():string {
+	get name():string {
 		return this.name;
 	}
-	setName(name:string) void{
+	set name(name:string) void{
 		this.name=name;
 	}
-	getAge():number{
+	get age():number{
 		return this.age;
 	}
-	setAge(age:number)void{
+	set  age(age:number)void{
 		this.age=age;
 	}
 }
