@@ -1,39 +1,40 @@
 //complete this code
 class Person {
-	
-	constructor(name: string, age: number){
-		this.name =  name;
-		this.age=age;
+	/** @param{string} name
+	*  @param{number} age
+	*/
+	constructor(name , age){
+		this._name =  name;
+		this._age=age;
 	}
-	get name():string {
-		return this.name;
+	get name(){
+		return this._name;
 	}
-	set name(name:string) void{
-		this.name=name;
+	set name(name){
+		this._name = name;
 	}
-	get age():number{
-		return this.age;
+	get age(){
+		return this._age;
 	}
-	set  age(age:number)void{
-		this.age=age;
+	set age(age){
+		this._age=age;
 	}
 }
 
 class Student extends Person {
 	
-	study():void{
+	study(){
 		console.log(this.getName()+" is studying");
 	}
 }
 
 class Teacher extends Person {
 
-	teach():void{
+	teach(){
 		console.log(this.getName+" is teaching");
 	}
 	
 }
-
 // Do not change the code below this line
 window.Person = Person;
 window.Student = Student;
